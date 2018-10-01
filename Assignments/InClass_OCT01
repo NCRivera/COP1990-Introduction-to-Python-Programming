@@ -1,0 +1,22 @@
+# Prompt the user to input the bugs.
+
+# Create the local variables: bugsCollected, totalCollected.
+bugsCollected = 0
+
+totalCollected = 0
+
+days = 1
+
+# Enter the number of bugs collected per day.
+
+
+# for days in range(5):
+
+while days <= 5:
+    print("Day", days, end=". ")
+    print('Bugs Collected:', totalCollected, end=". ")
+    bugsCollected = int(input('How many bugs have you collected today: '))
+    totalCollected += bugsCollected
+    days += 1
+
+print('\nYou collected', totalCollected, 'bugs!')
